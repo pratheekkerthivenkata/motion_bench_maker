@@ -1,0 +1,48 @@
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.793733664964159
+      - position: 1.159738362357787
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: -2.967059727839306
+      - position: 1.929943192062096
+        joint_name: kuka_arm_3_joint
+      - position: -2.967059728016169
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.7376041556089351
+      - joint_name: kuka_arm_6_joint
+        position: -0.804502208246512
+      - position: -0.3277636273176167
+        joint_name: WRJ2
+      - position: -0.3251728743123653
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4332903832388158
+      - joint_name: FFJ3
+        position: 1.268156077114956
+      - joint_name: FFJ2
+        position: 1.570796326377699
+      - joint_name: FFJ1
+        position: 0.9814351924544971
+group_name: finger_ff
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+    joint_names: [virtual_joint]
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.6410185171763761, -0.750504730473064, 2.142145828525356, -0.5266838992266067, -1.633185002398537, -0.6764553171263421, -2.252818644996155, -0.5200112580438522, 0.1137629483442393, 0.4346951924674123, 0.2920857685249383, 0.5003666804319015, 0.66990130733787, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+allowed_planning_time: 60

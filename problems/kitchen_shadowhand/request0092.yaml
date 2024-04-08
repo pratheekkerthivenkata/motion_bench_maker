@@ -1,0 +1,48 @@
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -1.285205360317094
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: -2.287130612353466
+      - joint_name: kuka_arm_3_joint
+        position: -1.731541800953768
+      - position: 1.870871433352909
+        joint_name: kuka_arm_4_joint
+      - position: 0.0563299767203648
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: 2.96705972839
+      - position: -0.5189938297257566
+        joint_name: WRJ2
+      - position: -0.7838611129978926
+        joint_name: WRJ1
+      - position: 0.4326044461622123
+        joint_name: FFJ4
+      - position: 1.548118927572226
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.57079632679
+      - position: 0.5463595438969258
+        joint_name: FFJ1
+num_planning_attempts: 2
+group_name: finger_ff
+start_state:
+  multi_dof_joint_state:
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+    wrench: []
+    joint_names: [virtual_joint]
+  joint_state:
+    position: [0.3280424928551519, -0.7736237802144575, 2.72271522117859, -0.3480231673701552, 0.7970328653969995, 0.8786288963376852, 0.7883394365776095, -0.5235987755982988, 0.1818212331183617, 0.4363323129985824, 0.9327496230202799, 0.7246308737310545, 0.2080044613578946, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault

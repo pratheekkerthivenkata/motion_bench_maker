@@ -1,0 +1,48 @@
+max_velocity_scaling_factor: 0
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+allowed_planning_time: 60
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+group_name: finger_ff
+start_state:
+  joint_state:
+    position: [-2.774402086879595, 0.8939551748377917, -2.058050619719884, -0.188807059251368, -0.777847644654019, -1.096500873256338, -2.257878829721799, -0.5235987755982988, 0.1070319437913401, 0.4363323129985824, 0.3568945299054481, 0.9901536509259592, 0.5631170718866408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    twist: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    wrench: []
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: -2.606157985242959
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: 1.57079632679
+      - joint_name: kuka_arm_2_joint
+        position: -0.9622064866504761
+      - position: -1.893698180587322
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 2.922830446649917
+      - joint_name: kuka_arm_5_joint
+        position: 1.028218426728079
+      - joint_name: kuka_arm_6_joint
+        position: -2.349986390764947
+      - joint_name: WRJ2
+        position: -0.5235987374498881
+      - joint_name: WRJ1
+        position: -0.2649484570641233
+      - joint_name: FFJ4
+        position: 0.4363322200392965
+      - position: 0.7288910684972936
+        joint_name: FFJ3
+      - position: 1.432750594712608
+        joint_name: FFJ2
+      - position: 1.57079632679
+        joint_name: FFJ1

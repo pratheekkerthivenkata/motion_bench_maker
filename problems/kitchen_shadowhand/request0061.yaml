@@ -1,0 +1,48 @@
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.6366187677989801
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: 0.05145065168054026
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.234212781493981
+      - position: 1.716951168756193
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.9505930686792964
+      - position: 1.691035350230944
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.4957102384556039
+      - position: 0.6108652380198963
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4363323121623409
+      - position: 0.2936919226509825
+        joint_name: FFJ3
+      - position: 0.4507744795509941
+        joint_name: FFJ2
+      - position: 0.7509796380859861
+        joint_name: FFJ1
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.04296959853905655, -0.7847793343733768, -2.060206236942197, -0.5938343253498896, 2.956543178101743, -0.4592129173494875, -2.084459349473574, -0.2812938306852484, -0.03986100881350711, 0.4358560207182446, 0.6562994162412695, 4.747628349775681e-09, 0.9420249627651688, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    wrench: []
+    twist: []
+    joint_names: [virtual_joint]
+max_acceleration_scaling_factor: 0
+allowed_planning_time: 60
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+max_velocity_scaling_factor: 0

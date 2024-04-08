@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.9734648227158459
+      - joint_name: kuka_arm_1_joint
+        position: -1.57079632679
+      - position: 0.8616241600024998
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.634357717938051
+      - joint_name: kuka_arm_4_joint
+        position: -2.733823021477815
+      - joint_name: kuka_arm_5_joint
+        position: -0.5355196287110287
+      - joint_name: kuka_arm_6_joint
+        position: -1.848158754400825
+      - joint_name: WRJ2
+        position: -0.3792921540616377
+      - joint_name: WRJ1
+        position: -0.4600162380823397
+      - joint_name: FFJ4
+        position: 0.4359579170383874
+      - joint_name: FFJ3
+        position: 1.570796306142978
+      - joint_name: FFJ2
+        position: 1.570796326773073
+      - joint_name: FFJ1
+        position: 0.6566273528520059
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.199306142100894, -0.9049296261474404, -1.370415661924553, -0.02871159913639258, -1.269037094876136, 0.8640732277991248, 1.031984275041478, -0.5235987755982988, 0.03455839356460189, 0.4363323129985824, 0.6066651184754041, 0.5962999649907819, 0.5403165885107799, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    wrench: []
+group_name: finger_ff
+allowed_planning_time: 60

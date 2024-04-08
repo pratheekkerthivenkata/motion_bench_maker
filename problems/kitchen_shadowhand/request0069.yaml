@@ -1,0 +1,48 @@
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+start_state:
+  joint_state:
+    position: [0.4428476730850586, -0.8371599809826845, -0.8202213568605738, 0.2977994273643329, 1.150479494263045, -0.859398319669001, -2.297277419256491, -0.5231059694472767, 0.1439105453710696, 0.4363323129985824, 0.7171034037227164, 0.5232003238245833, 0.602352955086466, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+group_name: finger_ff
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: -2.530880523322033
+        joint_name: kuka_arm_0_joint
+      - position: 1.57079632679
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: 2.271260161640341
+      - joint_name: kuka_arm_3_joint
+        position: 1.850924655485654
+      - position: -2.96705972839
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.694613310090833
+      - position: 0.4468390644753022
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.4942747535238229
+      - joint_name: WRJ1
+        position: 0.2013141962294701
+      - position: 0.3810483177145237
+        joint_name: FFJ4
+      - position: 1.471779669072403
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.045382364091959
+      - position: 1.016644210913876
+        joint_name: FFJ1
+allowed_planning_time: 60
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+planner_id: RRTConnectkConfigDefault

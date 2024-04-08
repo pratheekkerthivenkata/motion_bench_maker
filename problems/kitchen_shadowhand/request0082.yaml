@@ -1,0 +1,48 @@
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+allowed_planning_time: 60
+group_name: finger_ff
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - position: 0.04365560477691607
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: -1.213266384253209
+      - position: -0.2194686157895409
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.908632280740212
+      - position: -2.934867359557766
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.8645078515080519
+      - position: -0.01799350022794801
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.5235986881587003
+      - joint_name: WRJ1
+        position: 0.5876170487176842
+      - joint_name: FFJ4
+        position: 0.4315674560903995
+      - position: 1.346214620878995
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 0.09335321534986583
+      - joint_name: FFJ1
+        position: 1.368958209080964
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.686070711963676, 0.9394304735830014, 2.778949551106869, -0.03363702499320347, 0.6431175750648892, -0.8587048239518896, -1.810559715993265, -0.4550796940700537, 0.2725889069371975, 0.4363323129985824, 0.2717520737424405, 1.180739695185966, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    wrench: []
+    twist: []

@@ -1,0 +1,13 @@
+joint_trajectory:
+  joint_names: [torso_lift_joint, shoulder_pan_joint, shoulder_lift_joint, upperarm_roll_joint, elbow_flex_joint, forearm_roll_joint, wrist_flex_joint, wrist_roll_joint]
+  points:
+    - time_from_start: 0
+      positions: [0.1, 1.32, 1.4, -0.2, 1.72, 0, 1.66, 0]
+    - time_from_start: 0
+      positions: [0.2128651468756761, -0.5761871804841172, 0.9013912936290587, -1.833024561640577, 1.691983452400451, 0.02471295078978355, 0.8929337613063175, 1.265578270722201]
+    - positions: [0.07241613210551441, 0.6255169881429521, 0.8847447565770707, 0.1496919686867315, -2.070843710529152, 2.043000955796624, 0.03074790403246874, 0.5265606561268332]
+      time_from_start: 0
+    - time_from_start: 0
+      positions: [0.3820732528414595, -1.334076141695752, 1.141021243782026, 2.851958480126555, 1.095786690827858, 0.9303466014132029, 0.08985816668675638, 2.333450981302032]
+  header:
+    frame_id: base_link

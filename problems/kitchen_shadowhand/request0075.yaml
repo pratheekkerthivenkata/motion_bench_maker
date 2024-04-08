@@ -1,0 +1,48 @@
+planner_id: RRTConnectkConfigDefault
+max_velocity_scaling_factor: 0
+group_name: finger_ff
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: 2.768831691962678
+        joint_name: kuka_arm_0_joint
+      - position: 1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -0.5037601217350066
+        joint_name: kuka_arm_2_joint
+      - position: -1.191563655976042
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 1.538088084639909
+      - joint_name: kuka_arm_5_joint
+        position: 1.121210237061955
+      - joint_name: kuka_arm_6_joint
+        position: -1.324565240943513
+      - joint_name: WRJ2
+        position: 0.05464782856863873
+      - joint_name: WRJ1
+        position: 0.4652824297387697
+      - position: 0.4363321596570059
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.8570986943993528
+      - position: 0.5178617756299898
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 0.7102723137179351
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-0.1412609252958031, -0.8749854057706639, 1.434678714320953, 0.5676751200921648, -0.9524979738709426, -0.790766667907399, -1.856972742894109, -0.5235984398446886, 0.283981363107985, 0.4363318219051146, 1.181934615242148, 0.4136421403406917, 0.03495644786878192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    wrench: []
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+allowed_planning_time: 60

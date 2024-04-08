@@ -1,0 +1,48 @@
+goal_constraints:
+  - joint_constraints:
+      - position: 2.277501445690925
+        joint_name: kuka_arm_0_joint
+      - position: 1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -2.96705972839
+        joint_name: kuka_arm_2_joint
+      - position: 1.069205565302696
+        joint_name: kuka_arm_3_joint
+      - position: -2.543380090108739
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 1.027322258122377
+      - position: -1.075400395996199
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.007679140965124963
+      - position: 0.4510807270814677
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.2408238878773225
+      - joint_name: FFJ3
+        position: 0.4870625958003086
+      - position: 0.6916620553400885
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 0.7242215465555255
+allowed_planning_time: 60
+num_planning_attempts: 2
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+start_state:
+  multi_dof_joint_state:
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+    joint_names: [virtual_joint]
+    wrench: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.721121591422634, 0.892836188095639, 1.440875430597468, 0.3327245441937913, -1.204733451533213, 1.262690760710692, 0.8483623166768687, -0.5235985260815462, 0.5644184387016673, 0.4342271408688696, 1.05076325439828, 2.244953237878373e-08, 0.4984014857611649, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+group_name: finger_ff

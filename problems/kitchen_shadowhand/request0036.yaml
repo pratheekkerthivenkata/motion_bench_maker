@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    wrench: []
+    twist: []
+  joint_state:
+    position: [-2.966177509792234, 0.7418462455313752, 0.2964136402701142, -0.3946155323850516, 0.1955429889417881, 0.8502260700566076, 1.085405148806975, -0.5180569853790288, 0.5221705384761411, 0.4355039473868752, 0.2923820284529878, 0.8110280598596531, 0.2587983795238937, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+allowed_planning_time: 60
+group_name: finger_ff
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - position: -0.07274187843520379
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: -1.288886332369382
+      - position: 2.868275565694234
+        joint_name: kuka_arm_2_joint
+      - position: -1.72692194560697
+        joint_name: kuka_arm_3_joint
+      - position: 0.0244671386841203
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.8696685884380845
+      - position: -0.4371412567267051
+        joint_name: kuka_arm_6_joint
+      - position: -0.5235987755982988
+        joint_name: WRJ2
+      - position: -0.1779282959397256
+        joint_name: WRJ1
+      - position: 0.4363323129985824
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.85730319434108
+      - position: 1.502141528465403
+        joint_name: FFJ2
+      - position: 1.570793109593358
+        joint_name: FFJ1

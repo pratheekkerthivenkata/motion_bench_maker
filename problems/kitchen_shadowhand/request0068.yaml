@@ -1,0 +1,48 @@
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 1.8795990403034
+      - joint_name: kuka_arm_1_joint
+        position: 1.57079632679
+      - joint_name: kuka_arm_2_joint
+        position: 0.7536123896776574
+      - position: -1.566571810363802
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 2.481118342392098
+      - joint_name: kuka_arm_5_joint
+        position: -0.2607588257137468
+      - position: 2.96705972839
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.1425773944181612
+      - position: 0.5706731798406027
+        joint_name: WRJ1
+      - position: 0.4085623773589714
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.4963388515611782
+      - position: 0.7319302965023792
+        joint_name: FFJ2
+      - position: 0.8540457025974307
+        joint_name: FFJ1
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+max_velocity_scaling_factor: 0
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.837320447816113, 0.9209923885954687, -2.96705972839, 0.02357938530108323, 0.2525435981584471, -0.8388667710667169, -2.073394033817666, -0.5138878219049229, 0.08648289376970331, 0.4267851184900987, 0.8751814448311931, 0.1930668186513333, 0.6352729013571986, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    twist: []
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+num_planning_attempts: 2
+allowed_planning_time: 60

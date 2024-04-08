@@ -1,0 +1,48 @@
+goal_constraints:
+  - joint_constraints:
+      - position: 2.034093953251841
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: 1.360402211758026
+      - position: -2.426728681864011
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.648480685593321
+      - joint_name: kuka_arm_4_joint
+        position: -1.481551860677324
+      - joint_name: kuka_arm_5_joint
+        position: -0.2321087050948626
+      - joint_name: kuka_arm_6_joint
+        position: -2.655968044607466
+      - joint_name: WRJ2
+        position: -0.03454464816981425
+      - position: -0.03394968084393885
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.436332312684834
+      - joint_name: FFJ3
+        position: 0.7687466842653979
+      - position: 1.03863393510967
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.22596205773866
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+    joint_names: [virtual_joint]
+  joint_state:
+    position: [-2.777319113292184, 0.919705173607639, -1.596486780889891, -0.2235085623962077, 2.107349977858453, 0.9031986378861001, 0.9225181281661073, -0.5233983281821393, 0.06619575780031679, 0.4363323129985824, 1.065910066916599, 0.4354617118461102, 0.1714213784663191, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff
+planner_id: RRTConnectkConfigDefault
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0

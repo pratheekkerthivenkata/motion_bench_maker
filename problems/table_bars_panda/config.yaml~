@@ -1,0 +1,14 @@
+robot_description: package://robowflex_dataset/configs/robots/panda.yaml
+ompl_config: package://robowflex_dataset/configs/ompl/ompl_planning_panda.yaml
+scene: package://robowflex_dataset/configs/scenes/table_bars/table_bars.urdf
+queries: package://robowflex_dataset/configs/scenes/table_bars/single_arm_queries.yaml
+variation: package://robowflex_dataset/configs/scenes/table_bars/variation.yaml
+sensors: package://robowflex_dataset/configs/scenes/table_bars/sensors.yaml
+planning_group: panda_arm
+samples: 100
+base_offset:
+    position    : [0.65, 0, -0.6]
+    orientation : [0, 0, 0 , 1]
+ee_offset:
+    position    : [0.29, -0.29, 0.4] 
+    orientation:  [-0.271, -0.653, -0.271, 0.653]

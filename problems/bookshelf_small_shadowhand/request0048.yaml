@@ -1,0 +1,84 @@
+goal_constraints:
+  - joint_constraints:
+      - position: 1.231214597194889
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: -0.3620776018612219
+      - position: -2.500214831333649
+        joint_name: kuka_arm_2_joint
+      - position: -2.077523438973681
+        joint_name: kuka_arm_3_joint
+      - position: -1.952820733891405
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 1.699603751134046
+      - position: 1.996601519523534
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: 0.1701438707086832
+      - joint_name: WRJ1
+        position: -0.7850145235498264
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - joint_name: FFJ3
+        position: 0.5372331873887983
+      - joint_name: FFJ2
+        position: 0.009190688871842745
+      - position: 0.6456852246135566
+        joint_name: FFJ1
+      - position: 0.1362861054405141
+        joint_name: KTHJ5
+      - joint_name: THJ4
+        position: 1.196518027744842
+      - joint_name: THJ3
+        position: 0.2584490539508617
+      - position: -0.004500367295314179
+        joint_name: THJ2
+      - joint_name: THJ1
+        position: 0.2159844051788148
+      - position: 0.07970832835235273
+        joint_name: LFJ5
+      - position: -0.4363323129985824
+        joint_name: LFJ4
+      - joint_name: LFJ3
+        position: 0.599976665203503
+      - position: 0.2177021578878664
+        joint_name: LFJ2
+      - joint_name: LFJ1
+        position: 0.3119543011832828
+      - position: 0.4361452680441005
+        joint_name: MFJ4
+      - position: 0.621814375577701
+        joint_name: MFJ3
+      - joint_name: MFJ2
+        position: 0.1224914910871177
+      - position: 0.4446206965200413
+        joint_name: MFJ1
+      - joint_name: RFJ4
+        position: -0.4362976974401424
+      - position: 0.3970692249343137
+        joint_name: RFJ3
+      - joint_name: RFJ2
+        position: 0.5594117952741804
+      - position: 0.2404562209430914
+        joint_name: RFJ1
+group_name: all_fingers
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+num_planning_attempts: 2
+start_state:
+  joint_state:
+    position: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    twist: []
+    wrench: []
+    joint_names: [virtual_joint]
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault

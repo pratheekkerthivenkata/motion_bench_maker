@@ -1,0 +1,48 @@
+max_acceleration_scaling_factor: 0
+goal_constraints:
+  - joint_constraints:
+      - position: -0.9914636112745978
+        joint_name: kuka_arm_0_joint
+      - position: -1.570796325941051
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: -2.530460315790678
+      - joint_name: kuka_arm_3_joint
+        position: -1.387257745452118
+      - position: 0.7023502762964425
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.07764651271634983
+      - position: -1.329136697082696
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.2829483803506766
+      - position: 0.6108049173225529
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4342594849164334
+      - joint_name: FFJ3
+        position: 0.233360236900318
+      - position: 1.355101418244566
+        joint_name: FFJ2
+      - position: 0.5265737480062286
+        joint_name: FFJ1
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.2547230633686568, -0.9235399192639363, 0.2220894310055113, 0.1122391235023078, 0.2320505741438258, -0.7764129737769775, -2.169556831823632, -0.5235987309113358, 0.05951309920931552, 0.4363322696010349, 0.8969870994853353, 0.0806911390460562, 0.813621636427847, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    wrench: []
+    joint_names: [virtual_joint]
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+group_name: finger_ff

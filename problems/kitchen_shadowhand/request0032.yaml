@@ -1,0 +1,48 @@
+max_velocity_scaling_factor: 0
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    joint_names: [virtual_joint]
+    twist: []
+  joint_state:
+    position: [-2.949280559089452, 0.964409923931557, -1.584662480151992, -0.04336912246906379, -0.2957811367289726, -0.5050136624542774, -2.554510071553869, -0.5116849508016313, -0.7006369825301719, 0.4363323041293556, 0.4675903317859062, 0.4806780696101708, 0.973752853240162, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.7807216938446936
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: 0.1231052594241104
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.140891351554608
+      - position: -1.575420083076298
+        joint_name: kuka_arm_4_joint
+      - position: 0.93852431417481
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -1.638428449387665
+      - position: -0.4875479757414379
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: 0.168423285239411
+      - position: 0.4132999551430369
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.2878484198862211
+      - joint_name: FFJ2
+        position: 1.065571127302894
+      - position: 0.7503650653651976
+        joint_name: FFJ1
+planner_id: RRTConnectkConfigDefault
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+group_name: finger_ff
+num_planning_attempts: 2
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]

@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 0.9804507957850795
+      - joint_name: kuka_arm_1_joint
+        position: -1.489275236041662
+      - position: 2.291133741862784
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: -1.936516984509346
+      - joint_name: kuka_arm_4_joint
+        position: 0.3758265355836958
+      - position: 0.1700236988507769
+        joint_name: kuka_arm_5_joint
+      - position: 0.2723038212493247
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: 0.1740405282512001
+      - joint_name: WRJ1
+        position: 0.1263210199291322
+      - position: 0.4363323129985824
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 1.262235954638942
+      - position: 1.297143712089159
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.280323239799674
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    joint_names: [virtual_joint]
+    twist: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+  joint_state:
+    position: [0.7652833581490111, -0.8026660838443466, -1.284456981317086, 0.5245184071427214, -1.419692817390359, 0.6889595451509428, 0.6519627393241417, -0.5230485731574509, -0.3631545679688132, 0.4363323129985824, 0.5385557220722281, 0.8454052468254796, 0.7139992004208351, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff

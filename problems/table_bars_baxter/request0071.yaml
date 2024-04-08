@@ -1,0 +1,50 @@
+group_name: both_arms
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: left_s0
+        position: -0.8982165633527246
+      - position: 0.1761964056815919
+        joint_name: left_s1
+      - position: -1.05376875881723
+        joint_name: left_e0
+      - position: 1.852838724866574
+        joint_name: left_e1
+      - position: -3.031341604936536
+        joint_name: left_w0
+      - position: 2.039162497862103
+        joint_name: left_w1
+      - joint_name: left_w2
+        position: -2.05496102377923
+      - joint_name: right_s0
+        position: 1.695706257088224
+      - position: -0.5013483929034982
+        joint_name: right_s1
+      - position: 0.1082405493578292
+        joint_name: right_e0
+      - position: 1.914438748875873
+        joint_name: right_e1
+      - joint_name: right_w0
+        position: 0.9537732391493264
+      - joint_name: right_w1
+        position: -1.551808353139612
+      - position: -0.1861197294123946
+        joint_name: right_w2
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+planner_id: BKPIECEGood
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+    joint_names: [virtual_joint]
+  joint_state:
+    name: [head_pan, left_s0, left_s1, left_e0, left_e1, left_w0, left_w1, left_w2, l_gripper_l_finger_joint, l_gripper_r_finger_joint, right_s0, right_s1, right_e0, right_e1, right_w0, right_w1, right_w2, r_gripper_l_finger_joint, r_gripper_r_finger_joint]
+    position: [0, 1.617259253731981, -1.264196400342247, -2.655627633297997, 2.318678358630415, 2.630159787928231, 0.5686544052956558, -2.561436606972811, 0.05, -0.05, -0.6270338642718717, -0.5513493392109708, 2.250512482212025, 2.451840567901992, -2.322787214671054, 1.204738478518709, 1.648732143518925, 0.05, -0.05]

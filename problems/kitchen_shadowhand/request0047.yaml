@@ -1,0 +1,48 @@
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - position: -0.8700539002132835
+        joint_name: kuka_arm_0_joint
+      - position: -1.48810824859091
+        joint_name: kuka_arm_1_joint
+      - position: -2.237610072943315
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: -1.820849156846598
+      - joint_name: kuka_arm_4_joint
+        position: 0.2586425508866804
+      - joint_name: kuka_arm_5_joint
+        position: -0.9932950315401008
+      - joint_name: kuka_arm_6_joint
+        position: -1.697048825745386
+      - joint_name: WRJ2
+        position: -0.5235987656762896
+      - joint_name: WRJ1
+        position: -0.1407626693539165
+      - joint_name: FFJ4
+        position: 0.3789003416662217
+      - joint_name: FFJ3
+        position: 1.22893974680582
+      - position: 0.9420317922380883
+        joint_name: FFJ2
+      - position: 1.57079632679
+        joint_name: FFJ1
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+start_state:
+  multi_dof_joint_state:
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    twist: []
+    wrench: []
+  joint_state:
+    position: [-2.807133285242899, 0.8031061371983635, -0.1790127883616855, -0.2738100790697126, 0.6516086760158104, 0.735102193895418, 1.056631009428539, -0.5235987755982988, 0.2232977374061864, 0.4363323129985824, 0.2473113598028849, 0.3829702407537774, 0.8841459788570027, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+max_acceleration_scaling_factor: 0
+num_planning_attempts: 2
+allowed_planning_time: 60

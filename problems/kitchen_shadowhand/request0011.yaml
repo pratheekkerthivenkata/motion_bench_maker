@@ -1,0 +1,48 @@
+group_name: finger_ff
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+start_state:
+  joint_state:
+    position: [0.5932727940506407, -0.8240762855466451, -1.424010881296496, 0.3317686664954718, -1.371410275540555, 0.8683270311668323, 0.7564911843518206, -0.5142638579565071, -0.2886486131485232, 0.4363323124325763, 1.187560089651353, 0.4572663781249415, 0.5206998519761193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+    joint_names: [virtual_joint]
+allowed_planning_time: 60
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -1.018922536244014
+      - joint_name: kuka_arm_1_joint
+        position: -1.482213816422722
+      - position: -2.612361711249767
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: -1.619751521845563
+      - position: 2.356445872958554
+        joint_name: kuka_arm_4_joint
+      - position: 0.2742228663702778
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -2.96705972839
+      - position: -0.4017484510470607
+        joint_name: WRJ2
+      - position: 0.6108652381980153
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - position: 0.5750340990711927
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 0.28364437477238
+      - joint_name: FFJ1
+        position: 1.267793865948272
+max_velocity_scaling_factor: 0

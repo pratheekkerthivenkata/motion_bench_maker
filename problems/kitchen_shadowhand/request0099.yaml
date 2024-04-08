@@ -1,0 +1,48 @@
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+start_state:
+  multi_dof_joint_state:
+    twist: []
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+  joint_state:
+    position: [0.3806863662513667, -0.7930409224430185, -0.9576089655637956, 0.3618186981490028, 1.184834817945195, -1.161651039649566, -2.370956766703781, -0.5235987524714153, 0.6054385919354888, 0.436332268114972, 0.7902584283508688, 0.5676704818150362, 0.2512932868069296, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.709709454198199
+      - joint_name: kuka_arm_1_joint
+        position: 1.083249248730198
+      - position: -0.0105190532974458
+        joint_name: kuka_arm_2_joint
+      - position: -1.756929151815124
+        joint_name: kuka_arm_3_joint
+      - position: -0.7937188879630165
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.3064104540041397
+      - position: 0.3095491257063356
+        joint_name: kuka_arm_6_joint
+      - position: -0.3031853000048274
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: -0.2750112519803151
+      - joint_name: FFJ4
+        position: 0.2661465382954551
+      - joint_name: FFJ3
+        position: 0.95014277023174
+      - position: 0.9439574913016514
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.57079632679
+group_name: finger_ff
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2

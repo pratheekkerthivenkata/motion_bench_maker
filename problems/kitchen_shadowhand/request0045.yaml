@@ -1,0 +1,48 @@
+allowed_planning_time: 60
+num_planning_attempts: 2
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+planner_id: RRTConnectkConfigDefault
+start_state:
+  multi_dof_joint_state:
+    twist: []
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+  joint_state:
+    position: [-2.674185949612603, 1.007250401547879, 0.6730025732444666, 0.1720821034655637, 2.96705972839, -0.6411481778085696, -2.144759486599551, -0.5235740094784694, -0.4372896566495789, 0.4363323129985824, 0.6514207033777833, 0.7747338958815709, 0.5742996730130355, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.503422860337618
+      - joint_name: kuka_arm_1_joint
+        position: 1.570720020062418
+      - position: -2.967030578439693
+        joint_name: kuka_arm_2_joint
+      - position: 1.357087258950807
+        joint_name: kuka_arm_3_joint
+      - position: 1.549051629717653
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.8143166709024471
+      - joint_name: kuka_arm_6_joint
+        position: 1.556952150174272
+      - position: -0.265701839695996
+        joint_name: WRJ2
+      - position: 0.4655938713947841
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4344360845251821
+      - position: 0.3496166571281957
+        joint_name: FFJ3
+      - position: 0.6254195651670683
+        joint_name: FFJ2
+      - position: 0.7643000381886332
+        joint_name: FFJ1

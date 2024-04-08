@@ -1,0 +1,48 @@
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+group_name: finger_ff
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.852372660304265, 0.8195328864966207, -2.70402692137568, 0.1961531844525636, 2.96705972839, 1.035718953956093, 1.162091119819025, -0.5204939529807269, 0.574146490474556, 0.4363323129985824, 0.2878957466425832, 0.2442490618182614, 0.9493962738197628, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: -0.306331106563265
+        joint_name: kuka_arm_0_joint
+      - position: -1.211622236272119
+        joint_name: kuka_arm_1_joint
+      - position: -0.1178297564197484
+        joint_name: kuka_arm_2_joint
+      - position: 1.921588937891072
+        joint_name: kuka_arm_3_joint
+      - position: -0.2250206387739281
+        joint_name: kuka_arm_4_joint
+      - position: 0.8834702228825776
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -2.96705972839
+      - position: -0.5235987755982988
+        joint_name: WRJ2
+      - position: 0.6059606309507349
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - position: 0.2505920815398224
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.535316490298588
+      - position: 0.7615959048284442
+        joint_name: FFJ1
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]

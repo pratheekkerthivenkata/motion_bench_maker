@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.2341121939366635, -0.9062184281617514, -1.399198126951908, 0.0994614170983522, -1.078369735145685, 0.8511133659460968, 0.7227212629017903, -0.5235987755982988, -0.3076460541204226, 0.4363323129985824, 0.7723186606559014, 0.6932170403637972, 0.6376009351652669, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.225608970958774
+      - position: 1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -2.967047725434819
+        joint_name: kuka_arm_2_joint
+      - position: 1.139977618602423
+        joint_name: kuka_arm_3_joint
+      - position: -2.222094066647052
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.9237132082529936
+      - joint_name: kuka_arm_6_joint
+        position: -1.17774471386039
+      - position: -0.1577403089762074
+        joint_name: WRJ2
+      - position: 0.5958419771384931
+        joint_name: WRJ1
+      - position: 0.4359029977367964
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.4026733732017043
+      - position: 0.6068655845714387
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 0.6864309218522244
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+planner_id: RRTConnectkConfigDefault
+group_name: finger_ff
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0

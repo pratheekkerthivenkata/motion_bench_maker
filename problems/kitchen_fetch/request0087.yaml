@@ -1,0 +1,35 @@
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+start_state:
+  joint_state:
+    position: [0, 0, 0.38615, 0.05, 0, 0, 0.9042031541407656, -0.6495533753633939, -2.291649511378499, 1.686735403984964, -0.9874908854313871, -1.285072294271087, 2.064755784344365, 0.05, 0.05]
+    name: [l_wheel_joint, r_wheel_joint, torso_lift_joint, bellows_joint, head_pan_joint, head_tilt_joint, shoulder_pan_joint, shoulder_lift_joint, upperarm_roll_joint, elbow_flex_joint, forearm_roll_joint, wrist_flex_joint, wrist_roll_joint, l_gripper_finger_joint, r_gripper_finger_joint]
+    header:
+      frame_id: base_link
+planner_id: BKPIECEGood
+num_planning_attempts: 2
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: torso_lift_joint
+        position: 0.1652686705089951
+      - position: -1.241540437842573
+        joint_name: shoulder_pan_joint
+      - joint_name: shoulder_lift_joint
+        position: 0.05543256874499722
+      - position: 0.09250350316453068
+        joint_name: upperarm_roll_joint
+      - position: 1.537560127580106
+        joint_name: elbow_flex_joint
+      - position: 1.904528567959253
+        joint_name: forearm_roll_joint
+      - position: 1.494467325303561
+        joint_name: wrist_flex_joint
+      - position: 3.088732417213157
+        joint_name: wrist_roll_joint
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+group_name: arm_with_torso

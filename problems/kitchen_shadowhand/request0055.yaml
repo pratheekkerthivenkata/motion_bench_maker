@@ -1,0 +1,48 @@
+max_velocity_scaling_factor: 0
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.057202669135737
+      - joint_name: kuka_arm_1_joint
+        position: 1.57079632679
+      - position: 1.060580659132694
+        joint_name: kuka_arm_2_joint
+      - position: -1.839925335743383
+        joint_name: kuka_arm_3_joint
+      - position: -2.218615687615631
+        joint_name: kuka_arm_4_joint
+      - position: 0.6015561970264727
+        joint_name: kuka_arm_5_joint
+      - position: 0.8426818732636382
+        joint_name: kuka_arm_6_joint
+      - position: -0.2842203729092725
+        joint_name: WRJ2
+      - position: -0.7851906647512494
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4363323061277385
+      - joint_name: FFJ3
+        position: 1.068051266417616
+      - position: 1.560395454243567
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.250558911796989
+group_name: finger_ff
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.716469061784271, 0.7176156926173056, -0.4646440483643799, -0.4221045549013711, 0.8002923904490187, 0.8479513598028556, 0.9656850039472576, -0.5235987755982988, 0.3870656668037756, 0.4363323129985824, 0.2792822435791494, 0.9065893533885889, 0.3447903100688158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    twist: []
+allowed_planning_time: 60
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]

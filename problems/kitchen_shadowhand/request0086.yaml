@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+group_name: finger_ff
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+goal_constraints:
+  - joint_constraints:
+      - position: 1.848922645420305
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: 1.57079632679
+      - position: 0.9361203563617136
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: -1.605287080102605
+      - joint_name: kuka_arm_4_joint
+        position: -1.100664958877642
+      - position: 0.0522283924889918
+        joint_name: kuka_arm_5_joint
+      - position: -0.01382241838978918
+        joint_name: kuka_arm_6_joint
+      - position: -0.4486303018767447
+        joint_name: WRJ2
+      - position: -0.03163511853557976
+        joint_name: WRJ1
+      - position: 0.3691588712867706
+        joint_name: FFJ4
+      - position: 0.308081665778031
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.326708553096678
+      - position: 1.153391118174139
+        joint_name: FFJ1
+planner_id: RRTConnectkConfigDefault
+start_state:
+  joint_state:
+    position: [-2.795630857063311, 0.9393256188600126, 1.033092344442677, 0.1960697985741316, -0.7087633643748025, 1.091182244934009, 0.8134840062945244, -0.5235987755982988, 0.07376726469709194, 0.4363323129985824, 1.478848733776111, 0.1286303174298057, 0.3834164650196837, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+    wrench: []
+    joint_names: [virtual_joint]

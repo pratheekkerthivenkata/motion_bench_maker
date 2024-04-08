@@ -1,0 +1,48 @@
+max_acceleration_scaling_factor: 0
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-0.1266409760345361, -0.8691148693439167, 1.451212090913511, 0.6119909082271077, -0.982111372925092, -0.5998943695473431, -1.735389847509022, -0.5235987367409473, 0.0302341272856697, 0.4363322934018757, 0.8306895349337401, 0, 0.8677645641566489, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+num_planning_attempts: 2
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.9433994338127286
+      - position: -1.274659525608211
+        joint_name: kuka_arm_1_joint
+      - position: 0.5877603390214895
+        joint_name: kuka_arm_2_joint
+      - position: 1.742043926822027
+        joint_name: kuka_arm_3_joint
+      - position: -2.310714626237405
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.2120398311488885
+      - joint_name: kuka_arm_6_joint
+        position: -1.827519857319293
+      - joint_name: WRJ2
+        position: -0.08783004362438727
+      - joint_name: WRJ1
+        position: -0.3441629307743968
+      - position: 0.4363322567691589
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 1.058636093220004
+      - joint_name: FFJ2
+        position: 0.8441585061225375
+      - position: 1.57079632679
+        joint_name: FFJ1
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+group_name: finger_ff

@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.759898468172723, 0.8098785560977152, 2.37724585880752, 0.2191563621026804, -1.884549310204726, 0.807222161346281, 0.8091724307424765, -0.5170860853621947, -0.1754532220256853, 0.4331030878236937, 0.3614378573153825, 0.6654480289615771, 0.9835460811178457, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    twist: []
+    wrench: []
+planner_id: RRTConnectkConfigDefault
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - position: -0.7755249776018448
+        joint_name: kuka_arm_0_joint
+      - position: -1.570796255708571
+        joint_name: kuka_arm_1_joint
+      - position: -2.893605423080081
+        joint_name: kuka_arm_2_joint
+      - position: -1.287978740236386
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 1.303352160687844
+      - position: 0.7210840788242533
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -1.469556290119164
+      - joint_name: WRJ2
+        position: -0.2753636052425576
+      - joint_name: WRJ1
+        position: 0.5282117539432724
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - position: 1.57079632679
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 0.08878973532232551
+      - joint_name: FFJ1
+        position: 0.09220256808087134
+group_name: finger_ff

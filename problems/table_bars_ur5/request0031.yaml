@@ -1,0 +1,29 @@
+start_state:
+  joint_state:
+    position: [-1.708986208153203, -0.4960034144144613, 0.5674502437971088, 3.06071905016789, -1.429458256706814, -0.007183723710681095, 0, 0, 0, 0, 0, 0]
+    name: [shoulder_pan_joint, shoulder_lift_joint, elbow_joint, wrist_1_joint, wrist_2_joint, wrist_3_joint, robotiq_85_left_inner_knuckle_joint, robotiq_85_left_finger_tip_joint, robotiq_85_left_knuckle_joint, robotiq_85_right_inner_knuckle_joint, robotiq_85_right_finger_tip_joint, robotiq_85_right_knuckle_joint]
+group_name: manipulator
+num_planning_attempts: 2
+planner_id: BKPIECEGood
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+goal_constraints:
+  - joint_constraints:
+      - joint_name: shoulder_pan_joint
+        position: -1.712744263823719
+      - joint_name: shoulder_lift_joint
+        position: 0.1919547823040234
+      - position: 0.3202344117761226
+        joint_name: elbow_joint
+      - position: 2.631723331970566
+        joint_name: wrist_1_joint
+      - position: -1.424788983410961
+        joint_name: wrist_2_joint
+      - position: 0.004383592355213788
+        joint_name: wrist_3_joint

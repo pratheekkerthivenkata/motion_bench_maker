@@ -1,0 +1,48 @@
+start_state:
+  multi_dof_joint_state:
+    twist: []
+    joint_names: [virtual_joint]
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    wrench: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.3867046939760083, -0.7766236019678628, 2.404234133714008, -0.3018154852889824, -1.821290686712835, -0.7844278608872201, -2.482737293488825, -0.5215607293820925, -0.3089231692474605, 0.436332312703799, 0.6218606295560222, 0.920502612178925, 0.5998576561410828, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+group_name: finger_ff
+planner_id: RRTConnectkConfigDefault
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -1.331286021834985
+      - joint_name: kuka_arm_1_joint
+        position: -1.57079632679
+      - joint_name: kuka_arm_2_joint
+        position: 0.8750466499126891
+      - joint_name: kuka_arm_3_joint
+        position: 1.561248958002209
+      - position: -2.544353547630172
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.1655237955471257
+      - position: -1.527062893524357
+        joint_name: kuka_arm_6_joint
+      - position: -0.4327537005220934
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: 0.14203209477143
+      - joint_name: FFJ4
+        position: 0.4363306760424518
+      - position: 0.8438567944837873
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 0.1829375084066142
+      - joint_name: FFJ1
+        position: 1.388678367270318
+num_planning_attempts: 2

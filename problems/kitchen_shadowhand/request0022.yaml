@@ -1,0 +1,48 @@
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.703636576416961
+      - position: 1.168763946817107
+        joint_name: kuka_arm_1_joint
+      - position: -2.957989718180884
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.863348772225971
+      - joint_name: kuka_arm_4_joint
+        position: 2.488945386784414
+      - position: -0.05478918672245218
+        joint_name: kuka_arm_5_joint
+      - position: -0.02079288168776968
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: 0.08803922243223303
+      - joint_name: WRJ1
+        position: -0.7802754745447512
+      - position: 0.4363323080594344
+        joint_name: FFJ4
+      - position: 1.133203083305618
+        joint_name: FFJ3
+      - position: 1.350457314410805
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.328166866640841
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    twist: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.1735495723834875, -0.8154755795534572, -2.33775408985492, -0.2007153804019508, -2.935321316699152, -0.7592132465102026, -2.487190704815147, -0.2862078196358673, -0.5059424354762334, 0.4363323129985824, 0.6564522937614357, 0.3353667747846273, 1.139148571512405, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+group_name: finger_ff
+max_acceleration_scaling_factor: 0

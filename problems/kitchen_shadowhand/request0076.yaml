@@ -1,0 +1,48 @@
+group_name: finger_ff
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 0.6602212145391755
+      - joint_name: kuka_arm_1_joint
+        position: -1.535179495332026
+      - joint_name: kuka_arm_2_joint
+        position: -0.822559979091487
+      - position: 1.784980139924946
+        joint_name: kuka_arm_3_joint
+      - position: 0.4167747387653614
+        joint_name: kuka_arm_4_joint
+      - position: 0.02482758473022987
+        joint_name: kuka_arm_5_joint
+      - position: 2.96705972839
+        joint_name: kuka_arm_6_joint
+      - position: 0.07329078461963873
+        joint_name: WRJ2
+      - position: -0.4207713964683616
+        joint_name: WRJ1
+      - position: 0.4363323129985824
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 1.351580335207399
+      - position: 1.570782436507826
+        joint_name: FFJ2
+      - position: 1.463703235805919
+        joint_name: FFJ1
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+allowed_planning_time: 60
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [-2.966977293318243, 0.8472021308031569, 0.4963278097897297, -0.1858775542657774, 0.002935014993390859, 0.8130916000749442, 0.9557589735184758, -0.5174597619648202, 0.04226532231690896, 0.4363323129985824, 0.8159003466151364, 0.6894821224260854, 0.326939569655752, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    wrench: []
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+planner_id: RRTConnectkConfigDefault
+max_velocity_scaling_factor: 0

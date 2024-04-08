@@ -1,0 +1,48 @@
+group_name: finger_ff
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+allowed_planning_time: 60
+num_planning_attempts: 2
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - position: 2.780239833485735
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: 1.265314346826863
+      - joint_name: kuka_arm_2_joint
+        position: -2.790885150491128
+      - joint_name: kuka_arm_3_joint
+        position: 1.837077798685364
+      - position: -2.96705972839
+        joint_name: kuka_arm_4_joint
+      - position: -0.6540587506868432
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -0.9768328361742346
+      - joint_name: WRJ2
+        position: -0.4403470570433642
+      - position: -0.7841640850444886
+        joint_name: WRJ1
+      - position: 0.4354031937896303
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 1.28597795609321
+      - joint_name: FFJ2
+        position: 1.447250029454
+      - joint_name: FFJ1
+        position: 1.45580282177538
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    wrench: []
+    twist: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.3754517722481397, -0.9183356463870268, 0.5693935442985846, 0.09051508474715961, 2.808688332069917, 0.7867070313046864, 1.216980896085393, -0.5235987721900658, 0.1505202665587214, 0.4363323098705069, 0.5564626633739382, 0.5241158861353116, 0.6064796856612672, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

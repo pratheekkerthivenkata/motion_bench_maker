@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - position: 0.2527189876298369
+        joint_name: kuka_arm_0_joint
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -0.3323440887670787
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.606277827619843
+      - position: -2.141968929511251
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -1.473168307663985
+      - position: -1.325251609076085
+        joint_name: kuka_arm_6_joint
+      - position: -0.4713159549649025
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: 0.3973364045679126
+      - joint_name: FFJ4
+        position: 0.3752768899439302
+      - position: 1.431499436622887
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.481969486856319
+      - joint_name: FFJ1
+        position: 1.516548509294779
+start_state:
+  joint_state:
+    position: [0.4163437642414805, -0.7650119034645547, 2.322343202129306, -0.4800973443182213, -1.851308178742317, -0.8575728237086027, -2.503668089216498, -0.5235987642855829, 0.1021500617877242, 0.4363323043793916, 1.543697643999176, 0.04180672260193741, 0.2631062662784946, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    joint_names: [virtual_joint]
+    twist: []
+    wrench: []

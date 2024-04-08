@@ -1,0 +1,48 @@
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+max_acceleration_scaling_factor: 0
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: 2.96705972839
+        joint_name: kuka_arm_0_joint
+      - position: 1.260705755828781
+        joint_name: kuka_arm_1_joint
+      - position: -2.881470204544358
+        joint_name: kuka_arm_2_joint
+      - position: 1.889335948593697
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: -2.722327688166261
+      - joint_name: kuka_arm_5_joint
+        position: -0.8044893480361206
+      - position: -0.9591716773253461
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.5235987753529648
+      - position: -0.7853711668556519
+        joint_name: WRJ1
+      - position: 0.2844552783828222
+        joint_name: FFJ4
+      - position: 1.43525641155313
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.439642064061093
+      - position: 1.446511821180826
+        joint_name: FFJ1
+allowed_planning_time: 60
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    wrench: []
+  joint_state:
+    position: [0.7777952180285794, -0.8639021547731194, 1.815946105079613, -0.4213960418816037, 1.281717928088995, 0.975269187318323, 0.9815536109135086, -0.5229645640249164, 0.3474008725595572, 0.4363323129985824, 1.417856388016747, 0.193758522282871, 0.1678219201665236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault

@@ -1,0 +1,31 @@
+<launch>
+
+  <!-- GDB Debug Option -->
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <!-- Arguments for ROS parameters -->
+  <arg name="dataset" default="package://motion_bench_maker/problems/bookshelf_small_panda" />
+  <arg name="visualize" default="false" />
+  <arg name="octo" default="true" />
+  <arg name="pcd" default="false" />
+  <arg name="required" default="false" />
+
+  <!-- Start the sensed_scenes node -->
+  <node name="$(anon sensed_scenes)" launch-prefix="$(arg launch_prefix)" pkg="motion_bench_maker" type="sensed_scenes" output="screen" required="$(arg required)"> 
+    
+    <param name="dataset" value="$(arg dataset)" />
+    <param name="visualize" value="$(arg visualize)" />
+    <param name="pcd" value="$(arg pcd)" />
+    <param name="octo" value="$(arg octo)"/>
+    
+  </node>
+
+  <group if="$(arg visualize)">
+     <include file="$(find motion_bench_maker)/launch/rviz.launch" >
+       <arg name="config" value="visualize" />
+    </include>
+  </group>
+    
+</launch>

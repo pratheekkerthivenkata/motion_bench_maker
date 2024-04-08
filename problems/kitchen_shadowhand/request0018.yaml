@@ -1,0 +1,48 @@
+num_planning_attempts: 2
+planner_id: RRTConnectkConfigDefault
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    wrench: []
+  joint_state:
+    position: [0.4556981376319982, -0.9478385026101708, 0.4579959532398535, 0.01264487980581583, -0.02141584662088072, -0.3640193171812719, -1.793058515540613, -0.5001610354279385, -0.3243878886268657, 0.4363323129985824, 0.2437137947885465, 0.5838637445372652, 0.7676610081599448, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.3151510124934949
+      - position: -1.194352741255994
+        joint_name: kuka_arm_1_joint
+      - position: 0.2433763915384645
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: 1.944633244053327
+      - position: -0.3951641042389371
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.7359732559862753
+      - position: 2.967059728363544
+        joint_name: kuka_arm_6_joint
+      - position: -0.5004470667634306
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: -0.7853981633974483
+      - joint_name: FFJ4
+        position: 0.4363307701599062
+      - joint_name: FFJ3
+        position: 0.6471191581042165
+      - joint_name: FFJ2
+        position: 1.570791481947869
+      - position: 1.570791388253893
+        joint_name: FFJ1
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]

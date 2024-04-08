@@ -1,0 +1,48 @@
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 0.2913582601039476
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -0.8973690281500106
+        joint_name: kuka_arm_2_joint
+      - position: 1.810724934004651
+        joint_name: kuka_arm_3_joint
+      - position: 2.559789177761339
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -1.376844192816106
+      - position: 0.9303077230520282
+        joint_name: kuka_arm_6_joint
+      - position: -0.5235987755982988
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: -0.7784365524875611
+      - position: 0.4363323129985824
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 0.8647578669968585
+      - joint_name: FFJ2
+        position: 1.475965611138738
+      - position: 1.491116371650693
+        joint_name: FFJ1
+start_state:
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    wrench: []
+    twist: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+  joint_state:
+    position: [0.410958386918991, -0.97628987973404, -1.906460101663594, 0.2320242778874515, 2.088966379993557, -1.220270978555067, -2.260645043496877, -0.5235985623593756, 0.5841827921169863, 0.4363319438629296, 1.08969042921953, 0.4499445077614018, 0.08924457964663658, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff

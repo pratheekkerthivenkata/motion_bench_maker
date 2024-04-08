@@ -1,0 +1,14 @@
+robot_description: package://robowflex_dataset/configs/robots/ur5.yaml
+ompl_config: package://robowflex_dataset/configs/ompl/ompl_planning_ur5.yaml
+scene: package://robowflex_dataset/configs/scenes/kitchen/kitchen.urdf
+queries: package://robowflex_dataset/configs/scenes/kitchen/hard_queries.yaml
+variation: package://robowflex_dataset/configs/scenes/kitchen/variation.yaml
+sensors: package://robowflex_dataset/configs/scenes/kitchen/sensors.yaml
+planning_group: manipulator
+samples: 100
+base_offset:
+    position    : [0, 0, 0.1]
+    orientation : [0, 0, 0, 1]
+ee_offset:
+    position    : [0, -0.045, 0]
+    orientation : [0, 0, 0, 1]

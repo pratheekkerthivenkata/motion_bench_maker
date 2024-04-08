@@ -1,0 +1,45 @@
+start_state:
+  joint_state:
+    position: [1.76572455077048, -0.6900639183321149, -1.911126085564685, -0.4128962141193678, -4.157776548592204, 0.9279457424841374, 1.280802100825926, 0, 0, 0.3162804749530883, 0.4868461882144687, 0.6202195577575006, -0.5019982372002357, 3.443737715810713, 1.186453508316614, -1.807198564992918, 0, 0]
+    name: [yumi_joint_1_l, yumi_joint_2_l, yumi_joint_7_l, yumi_joint_3_l, yumi_joint_4_l, yumi_joint_5_l, yumi_joint_6_l, gripper_l_joint, gripper_l_joint_m, yumi_joint_1_r, yumi_joint_2_r, yumi_joint_7_r, yumi_joint_3_r, yumi_joint_4_r, yumi_joint_5_r, yumi_joint_6_r, gripper_r_joint, gripper_r_joint_m]
+goal_constraints:
+  - joint_constraints:
+      - position: -1.776750646414905
+        joint_name: yumi_joint_1_l
+      - joint_name: yumi_joint_2_l
+        position: -1.467418770547341
+      - position: 1.11711773512094
+        joint_name: yumi_joint_7_l
+      - position: -0.3011378019068169
+        joint_name: yumi_joint_3_l
+      - joint_name: yumi_joint_4_l
+        position: 4.627020141238185
+      - joint_name: yumi_joint_5_l
+        position: 0.4875968599799838
+      - position: 0.8082817347505684
+        joint_name: yumi_joint_6_l
+      - position: 1.93642542297142
+        joint_name: yumi_joint_1_r
+      - position: -1.631097503476609
+        joint_name: yumi_joint_2_r
+      - joint_name: yumi_joint_7_r
+        position: -0.7902184684005729
+      - position: -0.3588640638761081
+        joint_name: yumi_joint_3_r
+      - joint_name: yumi_joint_4_r
+        position: 4.349872649222878
+      - joint_name: yumi_joint_5_r
+        position: -0.2570979267793728
+      - position: 2.449784051882658
+        joint_name: yumi_joint_6_r
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+num_planning_attempts: 2
+max_velocity_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+group_name: both_arms
+allowed_planning_time: 60

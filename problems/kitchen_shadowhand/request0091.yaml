@@ -1,0 +1,48 @@
+group_name: finger_ff
+start_state:
+  joint_state:
+    position: [0.3434846529725908, -0.7680103476550612, -0.1588480393278289, 0.3825208791220443, 0.6416673596804489, -0.7087292148271389, -2.108599673047179, -0.5215260652868891, 0.3092364123469103, 0.4363323129985824, 0.2716444323088826, 0.0159738515286971, 1.162205108910397, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    twist: []
+    wrench: []
+    joint_names: [virtual_joint]
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: -0.6448490749829145
+        joint_name: kuka_arm_0_joint
+      - joint_name: kuka_arm_1_joint
+        position: -1.570796321731138
+      - position: 0.04483406212864829
+        joint_name: kuka_arm_2_joint
+      - position: 1.286008464436366
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: -1.333581877964067
+      - joint_name: kuka_arm_5_joint
+        position: 0.9642298383173546
+      - joint_name: kuka_arm_6_joint
+        position: -1.658513197595109
+      - position: -0.5072163553649712
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: 0.4622311480646011
+      - position: 0.4316923313593541
+        joint_name: FFJ4
+      - position: 0.5589588545925752
+        joint_name: FFJ3
+      - position: 0.4514527876579764
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 0.7236823389849434
+planner_id: RRTConnectkConfigDefault
+max_velocity_scaling_factor: 0
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+max_acceleration_scaling_factor: 0
+allowed_planning_time: 60

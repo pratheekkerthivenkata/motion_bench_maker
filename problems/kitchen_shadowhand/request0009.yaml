@@ -1,0 +1,48 @@
+planner_id: RRTConnectkConfigDefault
+start_state:
+  multi_dof_joint_state:
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+    wrench: []
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.2360989038568815, -0.8302027896417706, -2.11607004932205, -0.1394118072744935, -0.7529335050201456, 0.9775955195243951, 1.071158643923111, -0.5224414233658458, 0.1350241747213974, 0.4363323129985824, 0.9009769820891944, 0.2105081141669877, 0.7900920729999993, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+group_name: finger_ff
+goal_constraints:
+  - joint_constraints:
+      - position: -1.367813486314309
+        joint_name: kuka_arm_0_joint
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: -2.283145125273055
+        joint_name: kuka_arm_2_joint
+      - joint_name: kuka_arm_3_joint
+        position: -1.635645304756916
+      - position: 0.5346133010495674
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.2575632984149624
+      - position: -1.668278910217828
+        joint_name: kuka_arm_6_joint
+      - position: -0.4254919203964573
+        joint_name: WRJ2
+      - joint_name: WRJ1
+        position: -0.3370759079107837
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - joint_name: FFJ3
+        position: 0.6290786256031031
+      - joint_name: FFJ2
+        position: 0.9016432899959614
+      - position: 1.379048130957818
+        joint_name: FFJ1
+num_planning_attempts: 2
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]

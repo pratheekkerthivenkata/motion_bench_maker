@@ -1,0 +1,48 @@
+max_velocity_scaling_factor: 0
+group_name: finger_ff
+allowed_planning_time: 60
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -0.9326368153569627
+      - position: -1.213368378407785
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: 0.4341534878010649
+      - joint_name: kuka_arm_3_joint
+        position: 1.750201421928565
+      - joint_name: kuka_arm_4_joint
+        position: 1.930397376980232
+      - joint_name: kuka_arm_5_joint
+        position: -0.4771049964685015
+      - position: 0.3205008461828439
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.5235987755982988
+      - joint_name: WRJ1
+        position: -0.5096111454000213
+      - position: 0.4032549177577669
+        joint_name: FFJ4
+      - position: 0.8833773914808971
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.327981769479637
+      - joint_name: FFJ1
+        position: 1.180064822026232
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+start_state:
+  joint_state:
+    position: [-0.03228264618986681, -0.5276974374098184, 0.4844393817957313, 0.813670444085685, 0.2008653922348553, -0.7166103471396934, -2.128311425806836, -0.5223869839656904, 0.6082433619006011, 0.435614805804018, 0.5954335487355253, 0.7065503733981409, 0.003929180035235687, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    twist: []
+    joint_names: [virtual_joint]
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+planner_id: RRTConnectkConfigDefault

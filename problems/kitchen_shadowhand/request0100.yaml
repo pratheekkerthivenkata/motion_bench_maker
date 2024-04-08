@@ -1,0 +1,48 @@
+start_state:
+  multi_dof_joint_state:
+    twist: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    joint_names: [virtual_joint]
+    wrench: []
+  joint_state:
+    position: [0.4333460788979619, -1.034174595714272, -2.835369160336862, 0.2371644722029458, 0.2569764713989362, 1.018253941682243, 1.06559756967907, -0.3478880429058471, 0.1202957083092886, 0.3490878092382395, 0.3417561183321103, 1.207927850267212, 0.06443665162290671, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+planner_id: RRTConnectkConfigDefault
+allowed_planning_time: 60
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -2.709309215126119
+      - position: 1.23153834913087
+        joint_name: kuka_arm_1_joint
+      - position: 2.650245554923255
+        joint_name: kuka_arm_2_joint
+      - position: 1.941037877416301
+        joint_name: kuka_arm_3_joint
+      - position: 0.3533338163032176
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: 0.3295896267008152
+      - position: 2.967059728244978
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.01644552123872434
+      - position: -0.08240152634053168
+        joint_name: WRJ1
+      - position: 0.4363274155290537
+        joint_name: FFJ4
+      - joint_name: FFJ3
+        position: 1.546230567347064
+      - position: 1.558350716262656
+        joint_name: FFJ2
+      - position: 0.6160981918734311
+        joint_name: FFJ1
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+num_planning_attempts: 2
+group_name: finger_ff

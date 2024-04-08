@@ -1,0 +1,48 @@
+planner_id: RRTConnectkConfigDefault
+start_state:
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.4707974829323273, -0.5713136342839096, -0.4846712522116866, 0.7149504271620573, 1.839307336989853, -0.4682817325090636, -2.957340222352872, -0.5235987755982988, -0.5020584942557139, 0.4363323129985824, 0.3725782611397075, 0.9761686915873644, 0.4826632877980501, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    wrench: []
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    joint_names: [virtual_joint]
+    twist: []
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 0.6201582950631198
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: 2.239184291608378
+        joint_name: kuka_arm_2_joint
+      - position: -1.959353914774892
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 2.966992394624083
+      - position: 0.9685040602426946
+        joint_name: kuka_arm_5_joint
+      - position: -2.442581682305306
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.470374880281921
+      - joint_name: WRJ1
+        position: -0.3472834695404309
+      - joint_name: FFJ4
+        position: 0.4320989169240823
+      - joint_name: FFJ3
+        position: 0.9151782677938943
+      - position: 1.570768292652029
+        joint_name: FFJ2
+      - position: 1.384309715766747
+        joint_name: FFJ1
+group_name: finger_ff
+max_velocity_scaling_factor: 0
+num_planning_attempts: 2
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+workspace_parameters:
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""

@@ -1,0 +1,48 @@
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -1.389387457488014
+      - position: -1.57079632679
+        joint_name: kuka_arm_1_joint
+      - position: 0.9146832283842073
+        joint_name: kuka_arm_2_joint
+      - position: 1.908147201673058
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 0.6903257989553661
+      - position: 0.6732241432597553
+        joint_name: kuka_arm_5_joint
+      - position: 1.286605861806327
+        joint_name: kuka_arm_6_joint
+      - joint_name: WRJ2
+        position: -0.170549304234886
+      - position: 0.6108652328803102
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4357253504498629
+      - joint_name: FFJ3
+        position: 0.2374412541913915
+      - joint_name: FFJ2
+        position: 1.57079632679
+      - joint_name: FFJ1
+        position: 0.7483592189271798
+planner_id: RRTConnectkConfigDefault
+num_planning_attempts: 2
+start_state:
+  joint_state:
+    position: [-2.526970165901963, 0.875223212936981, 1.559294825008344, 0.431519194714211, 2.144254617578919, -0.7736886022420202, -2.434813814219156, -0.5220281201961429, -0.3903420161816077, 0.4363323129985824, 0.7485197792126643, 0.5258704209400062, 0.7538014326957446, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    wrench: []
+    twist: []
+    joint_names: [virtual_joint]
+allowed_planning_time: 60
+max_velocity_scaling_factor: 0
+group_name: finger_ff
+workspace_parameters:
+  header:
+    frame_id: ""
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+max_acceleration_scaling_factor: 0

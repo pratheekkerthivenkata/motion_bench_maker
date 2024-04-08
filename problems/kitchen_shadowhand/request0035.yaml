@@ -1,0 +1,48 @@
+allowed_planning_time: 60
+max_acceleration_scaling_factor: 0
+planner_id: RRTConnectkConfigDefault
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  min_corner: [-1, -1, -1]
+  header:
+    frame_id: ""
+max_velocity_scaling_factor: 0
+group_name: finger_ff
+start_state:
+  multi_dof_joint_state:
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+    wrench: []
+    joint_names: [virtual_joint]
+  joint_state:
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+    position: [0.4719286001568633, -0.6576834380051888, -0.8056990286461785, 0.5751093455209715, -1.670555355294941, 0.7617350190351245, 0.5458348241100724, -0.5226479534301532, -0.193333874579338, 0.4363323129985824, 0.5682791212093458, 0.7744647468965952, 0.5946745196276166, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: -2.762666395771144
+      - position: 1.431665268566725
+        joint_name: kuka_arm_1_joint
+      - joint_name: kuka_arm_2_joint
+        position: -0.6665392337462283
+      - position: -1.888738040274999
+        joint_name: kuka_arm_3_joint
+      - position: 0.7691432987386116
+        joint_name: kuka_arm_4_joint
+      - joint_name: kuka_arm_5_joint
+        position: -0.2659306244262663
+      - joint_name: kuka_arm_6_joint
+        position: -0.648047044529656
+      - position: 0.1745329251994329
+        joint_name: WRJ2
+      - position: -0.1638856641192553
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4349714918639106
+      - position: 1.040771435948062
+        joint_name: FFJ3
+      - joint_name: FFJ2
+        position: 1.517526937794276
+      - position: 1.569741970697352
+        joint_name: FFJ1
+num_planning_attempts: 2

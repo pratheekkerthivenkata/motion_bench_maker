@@ -1,0 +1,45 @@
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - position: -2.468720015205741
+        joint_name: yumi_joint_1_l
+      - joint_name: yumi_joint_2_l
+        position: -1.805714065879936
+      - position: -0.1782716775397526
+        joint_name: yumi_joint_7_l
+      - joint_name: yumi_joint_3_l
+        position: -0.3400998283174355
+      - joint_name: yumi_joint_4_l
+        position: -1.547551827198324
+      - position: -0.4514751343583099
+        joint_name: yumi_joint_5_l
+      - position: 1.835338544523244
+        joint_name: yumi_joint_6_l
+      - position: 2.628234970444133
+        joint_name: yumi_joint_1_r
+      - joint_name: yumi_joint_2_r
+        position: -1.694889925598926
+      - joint_name: yumi_joint_7_r
+        position: 0.4906549791977463
+      - position: -0.4127629964429923
+        joint_name: yumi_joint_3_r
+      - joint_name: yumi_joint_4_r
+        position: 1.346518578331809
+      - position: -0.6256256069097544
+        joint_name: yumi_joint_5_r
+      - position: -1.909028145309802
+        joint_name: yumi_joint_6_r
+planner_id: RRTConnectkConfigDefault
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+start_state:
+  joint_state:
+    name: [yumi_joint_1_l, yumi_joint_2_l, yumi_joint_7_l, yumi_joint_3_l, yumi_joint_4_l, yumi_joint_5_l, yumi_joint_6_l, gripper_l_joint, gripper_l_joint_m, yumi_joint_1_r, yumi_joint_2_r, yumi_joint_7_r, yumi_joint_3_r, yumi_joint_4_r, yumi_joint_5_r, yumi_joint_6_r, gripper_r_joint, gripper_r_joint_m]
+    position: [-2.261394381377694, 0.683413019070584, 2.94087978961, -0.01126588900872621, 3.689737321374999, 0.3982051872703822, -0.4049300088017237, 0, 0, -0.5293132094739076, -0.616042305751257, 0.1251219264018278, 0.06951703444098012, -0.2028201716998138, -0.4391333561731951, -3.35285694431896, 0, 0]
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
+group_name: both_arms

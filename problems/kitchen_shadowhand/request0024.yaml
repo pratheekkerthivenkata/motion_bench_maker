@@ -1,0 +1,48 @@
+allowed_planning_time: 60
+workspace_parameters:
+  max_corner: [1, 1, 1]
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+start_state:
+  multi_dof_joint_state:
+    wrench: []
+    joint_names: [virtual_joint]
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+  joint_state:
+    position: [-2.397930952267377, 0.7237788091902784, 2.25884787465812, 0.5211188903316474, 1.227272993967885, -0.5666455982214009, -2.175687585567262, -0.5186437130224968, -0.02801530336524703, 0.436010593136997, 0.6255183533491997, 0.5925973041689464, 0.4393458797062259, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+group_name: finger_ff
+max_velocity_scaling_factor: 0
+max_acceleration_scaling_factor: 0
+num_planning_attempts: 2
+planner_id: RRTConnectkConfigDefault
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 2.082012908540688
+      - position: 1.565341331440819
+        joint_name: kuka_arm_1_joint
+      - position: 0.4822793013236829
+        joint_name: kuka_arm_2_joint
+      - position: -1.66218957061505
+        joint_name: kuka_arm_3_joint
+      - joint_name: kuka_arm_4_joint
+        position: 1.626889737519748
+      - position: 0.7864687859391907
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: -2.16145286940234
+      - joint_name: WRJ2
+        position: -0.5235987755982988
+      - joint_name: WRJ1
+        position: -0.03820807424115202
+      - joint_name: FFJ4
+        position: 0.4363323129985824
+      - position: 0.3010675454837526
+        joint_name: FFJ3
+      - position: 0.379682347568672
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.48853362298667

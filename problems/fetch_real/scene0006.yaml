@@ -1,0 +1,177 @@
+allowed_collision_matrix:
+  entry_names: [base_link, bellows_link, bellows_link2, elbow_flex_link, estop_link, forearm_roll_link, gripper_link, head_pan_link, head_tilt_link, l_gripper_finger_link, l_wheel_link, laser_link, r_gripper_finger_link, r_wheel_link, shoulder_lift_link, shoulder_pan_link, torso_fixed_link, torso_lift_link, upperarm_roll_link, wrist_flex_link, wrist_roll_link]
+  entry_values:
+    - [false, true, true, false, true, false, false, true, true, false, true, true, false, true, true, true, true, true, true, false, false]
+    - [true, false, true, true, true, false, false, true, true, false, true, true, false, true, true, true, true, true, true, false, false]
+    - [true, true, false, false, true, false, false, true, true, false, true, true, false, true, true, true, true, true, true, false, false]
+    - [false, true, false, false, true, true, true, false, false, true, true, false, true, true, true, true, false, false, true, true, true]
+    - [true, true, true, true, false, true, false, true, true, false, true, true, true, true, true, true, true, true, true, false, true]
+    - [false, false, false, true, true, false, true, false, false, true, true, false, true, false, true, true, false, false, true, true, true]
+    - [false, false, false, true, false, true, false, false, false, true, false, false, true, false, false, false, false, false, true, true, true]
+    - [true, true, true, false, true, false, false, false, true, false, true, true, false, true, true, true, true, true, false, false, false]
+    - [true, true, true, false, true, false, false, true, false, false, true, true, false, true, true, true, true, true, false, false, false]
+    - [false, false, false, true, false, true, true, false, false, false, true, false, true, false, false, false, false, false, true, true, true]
+    - [true, true, true, true, true, true, false, true, true, true, false, true, true, true, true, true, true, true, true, true, true]
+    - [true, true, true, false, true, false, false, true, true, false, true, false, true, true, true, true, true, true, true, false, false]
+    - [false, false, false, true, true, true, true, false, false, true, true, true, false, false, false, false, false, false, true, true, true]
+    - [true, true, true, true, true, false, false, true, true, false, true, true, false, false, true, true, true, true, true, false, true]
+    - [true, true, true, true, true, true, false, true, true, false, true, true, false, true, false, true, true, false, true, true, true]
+    - [true, true, true, true, true, true, false, true, true, false, true, true, false, true, true, false, true, true, false, true, false]
+    - [true, true, true, false, true, false, false, true, true, false, true, true, false, true, true, true, false, true, false, false, false]
+    - [true, true, true, false, true, false, false, true, true, false, true, true, false, true, false, true, true, false, false, false, false]
+    - [true, true, true, true, true, true, true, false, false, true, true, true, true, true, true, false, false, false, false, true, true]
+    - [false, false, false, true, false, true, true, false, false, true, true, false, true, false, true, true, false, false, true, false, true]
+    - [false, false, false, true, true, true, true, false, false, true, true, false, true, true, true, false, false, false, true, true, false]
+robot_model_name: fetch
+fixed_frame_transforms:
+  - child_frame_id: base_link
+    transform:
+      rotation: [0, 0, 0, 1]
+      translation: [0, 0, 0]
+    header:
+      frame_id: base_link
+  - header:
+      frame_id: map
+    child_frame_id: base_link
+    transform:
+      rotation: [0.004801946621159158, -0.01108373533293488, 0.9236338921142458, -0.3830855328221188]
+      translation: [0.4520129601394161, 1.55406693193882, 0.7204450581807486]
+  - header:
+      frame_id: odom
+    child_frame_id: base_link
+    transform:
+      translation: [-3.011224184066062, 0.272155307652579, 0]
+      rotation: [0, 0, 0.3486842341110273, 0.9372402599560085]
+  - header:
+      frame_id: vicon/Fetch/Fetch
+    child_frame_id: base_link
+    transform:
+      translation: [-0.2583608594488173, 0.004994586119639877, 0.2978574361993991]
+      rotation: [0.00800967091753382, -0.007712003989974513, 0.4608640964655852, 0.8874010675873741]
+  - header:
+      frame_id: vicon/block_black_1/block_black_1
+    child_frame_id: base_link
+    transform:
+      translation: [0.1671725079155303, 0.5355382012665961, 0.8620973111595713]
+      rotation: [-0.001078817478906881, -0.0005817102607037036, -0.55308748451212, 0.8331222792856252]
+  - header:
+      frame_id: vicon/block_white_11/block_white_11
+    child_frame_id: base_link
+    transform:
+      translation: [0.4732165373789513, 0.2653774963169182, 0.8657566974635178]
+      rotation: [0.001942865697970622, -0.001355536218590105, 0.3626982701010192, 0.9319036176880997]
+  - header:
+      frame_id: vicon/block_white_7/block_white_7
+    child_frame_id: base_link
+    transform:
+      translation: [0.3597424072398446, 0.432777065420739, 0.8533393343990461]
+      rotation: [0.0180019612775127, 0.02137485026850497, -0.3555930540818464, 0.9342230060616721]
+  - header:
+      frame_id: vicon/bookshelf1/bookshelf1
+    child_frame_id: base_link
+    transform:
+      translation: [0.3665781513731551, 0.3989086690054022, 1.305681147387396]
+      rotation: [0.005318925249039969, 0.009588451379501307, 0.344953367714463, 0.9385557760393298]
+  - header:
+      frame_id: vicon_object_server/Black Box 1
+    child_frame_id: base_link
+    transform:
+      translation: [0.1994935045547397, 0.5696327429413798, 0.9067713326493653]
+      rotation: [-0.005794061869103776, 0.004815212521649471, -0.3921571770996551, 0.9198673768672623]
+  - header:
+      frame_id: vicon_object_server/White_Box_11
+    child_frame_id: base_link
+    transform:
+      translation: [0.4967598405114144, 0.2787983018224049, 0.8916389189858318]
+      rotation: [-0.006065652343270109, 0.003857888899831541, 0.3633725314280969, 0.931616191335479]
+  - header:
+      frame_id: vicon_object_server/White_Box_7
+    child_frame_id: base_link
+    transform:
+      translation: [0.3825120168724006, 0.4380254577427637, 0.8890108748841042]
+      rotation: [-0.002106925506585326, 0.02404212595562228, -0.3530533903344945, 0.935291847830271]
+  - header:
+      frame_id: vicon_object_server/shelf1
+    child_frame_id: base_link
+    transform:
+      translation: [0.4885644435167922, 0.5219009891057322, 1.520275131070504]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/shelf2
+    child_frame_id: base_link
+    transform:
+      translation: [0.4786491037592774, 0.5155552207780897, 1.169152417960365]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/shelf3
+    child_frame_id: base_link
+    transform:
+      translation: [0.4686767533382361, 0.5091729659082012, 0.8160108391993024]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/shelf4
+    child_frame_id: base_link
+    transform:
+      translation: [0.4586857756706958, 0.5027787896928264, 0.4622096310671461]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/shelf5
+    child_frame_id: base_link
+    transform:
+      translation: [0.4486947980031556, 0.4963846134774516, 0.1084084229349898]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_left_shelf1
+    child_frame_id: base_link
+    transform:
+      translation: [0.09847815404510574, 0.5911053561960163, 0.8990256936479459]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_left_shelf2
+    child_frame_id: base_link
+    transform:
+      translation: [0.2370865117036462, 0.7088984174239497, 0.8929826882901402]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_left_shelf3
+    child_frame_id: base_link
+    transform:
+      translation: [0.2827815746680002, 0.7477312947518397, 0.8909904887216329]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_left_shelf4
+    child_frame_id: base_link
+    transform:
+      translation: [0.4198667635610623, 0.8642299267355101, 0.8850138900161107]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_right_shelf1
+    child_frame_id: base_link
+    transform:
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+      translation: [0.4707624289343585, 0.1529014160020216, 0.896432342796017]
+  - header:
+      frame_id: vicon_object_server/side_right_shelf2
+    child_frame_id: base_link
+    transform:
+      translation: [0.609370786592899, 0.270694477229955, 0.8903893374382115]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_right_shelf3
+    child_frame_id: base_link
+    transform:
+      translation: [0.655065849557253, 0.3095273545578451, 0.888397137869704]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+  - header:
+      frame_id: vicon_object_server/side_right_shelf4
+    child_frame_id: base_link
+    transform:
+      translation: [0.7921510384503151, 0.4260259865415154, 0.8824205391641819]
+      rotation: [-0.003610147327676783, 0.01636295543683485, 0.3448768799437788, 0.9384983527987084]
+robot_state:
+  joint_state:
+    header:
+      frame_id: base_link
+    position: [-3.244741678237915, 6.093642234802246, 0.3679071068763733, 0.161, 1.310223460197449, 0.6581662691894531, 1.32543066985321, 1.506708581390076, -0.1954737359218597, 1.597200749482727, -0.007980281997742653, 1.673281529769287, 0.002958477454423902, 0.05009897798299789, 0.05009897798299789]
+    name: [l_wheel_joint, r_wheel_joint, torso_lift_joint, bellows_joint, head_pan_joint, head_tilt_joint, shoulder_pan_joint, shoulder_lift_joint, upperarm_roll_joint, elbow_flex_joint, forearm_roll_joint, wrist_flex_joint, wrist_roll_joint, l_gripper_finger_joint, r_gripper_finger_joint]
+name: (noname)+

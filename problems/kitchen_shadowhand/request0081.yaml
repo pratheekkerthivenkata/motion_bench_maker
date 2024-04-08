@@ -1,0 +1,48 @@
+workspace_parameters:
+  header:
+    frame_id: ""
+  min_corner: [-1, -1, -1]
+  max_corner: [1, 1, 1]
+group_name: finger_ff
+start_state:
+  joint_state:
+    position: [0.1311869852148321, -0.8356088694965302, 0.09405917320661855, 0.1319633194645942, 0.5279739172703959, -0.8370693833376581, -2.261711453492335, -0.5235987755982988, -0.01912785847609855, 0.4363323129985824, 0.646849641980234, 0.3364542977239685, 0.8413920829376479, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    name: [kuka_arm_0_joint, kuka_arm_1_joint, kuka_arm_2_joint, kuka_arm_3_joint, kuka_arm_4_joint, kuka_arm_5_joint, kuka_arm_6_joint, WRJ2, WRJ1, FFJ4, FFJ3, FFJ2, FFJ1, KTHJ5, THJ4, THJ3, THJ2, THJ1, LFJ5, LFJ4, LFJ3, LFJ2, LFJ1, MFJ4, MFJ3, MFJ2, MFJ1, RFJ4, RFJ3, RFJ2, RFJ1]
+  multi_dof_joint_state:
+    wrench: []
+    twist: []
+    transforms: [{rotation: [0, 0, 0, 1], translation: [0, 0, 0]}]
+    joint_names: [virtual_joint]
+num_planning_attempts: 2
+goal_constraints:
+  - joint_constraints:
+      - joint_name: kuka_arm_0_joint
+        position: 1.855142979930975
+      - joint_name: kuka_arm_1_joint
+        position: 1.569887957863447
+      - position: -2.148362951293197
+        joint_name: kuka_arm_2_joint
+      - position: 1.569531999121277
+        joint_name: kuka_arm_3_joint
+      - position: 0.4673651142511075
+        joint_name: kuka_arm_4_joint
+      - position: 0.04926157910741432
+        joint_name: kuka_arm_5_joint
+      - joint_name: kuka_arm_6_joint
+        position: 1.585432785432765
+      - joint_name: WRJ2
+        position: -0.5235987749642891
+      - position: 0.08381748874232056
+        joint_name: WRJ1
+      - joint_name: FFJ4
+        position: 0.4116893688602927
+      - position: 0.4436678417825013
+        joint_name: FFJ3
+      - position: 1.159080183942684
+        joint_name: FFJ2
+      - joint_name: FFJ1
+        position: 1.093595843953621
+planner_id: RRTConnectkConfigDefault
+max_acceleration_scaling_factor: 0
+max_velocity_scaling_factor: 0
+allowed_planning_time: 60
